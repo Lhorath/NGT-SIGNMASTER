@@ -14,6 +14,7 @@ Packages/
 lib/
 libs/
 Environment.props
+Directory.Build.props
 Directory.Build.props.user
 
 # Logs / generated local files

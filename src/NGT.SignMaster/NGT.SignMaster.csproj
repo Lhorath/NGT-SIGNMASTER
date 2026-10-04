@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NerdyGamerTools.SignMaster</RootNamespace>
+    <AssemblyName>NGT.SignMaster</AssemblyName>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <BEPINEX_PATH Condition="'$(BEPINEX_PATH)' == '' and '$(VALHEIM_INSTALL)' != ''">$(VALHEIM_INSTALL)\BepInEx</BEPINEX_PATH>
+    <VALHEIM_MANAGED Condition="'$(VALHEIM_MANAGED)' == '' and '$(VALHEIM_INSTALL)' != ''">$(VALHEIM_INSTALL)\valheim_Data\Managed</VALHEIM_MANAGED>
+  </PropertyGroup>
+
+  <Target Name="CheckLocalValheimReferences" BeforeTargets="ResolveReferences"
+          Condition="'$(BEPINEX_PATH)' == '' or '$(VALHEIM_MANAGED)' == ''">
+    <Error Text="Set VALHEIM_INSTALL, or set BEPINEX_PATH and VALHEIM_MANAGED, before building NGT SignMaster." />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(BEPINEX_PATH)\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BEPINEX_PATH)\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_valheim">
+      <HintPath>$(VALHEIM_MANAGED)\assembly_valheim.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_utils">
+      <HintPath>$(VALHEIM_MANAGED)\assembly_utils.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Splatform">
+      <HintPath>$(VALHEIM_MANAGED)\Splatform.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(VALHEIM_MANAGED)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(VALHEIM_MANAGED)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(VALHEIM_MANAGED)\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\default-signs.tsv">
+      <LogicalName>NerdyGamerTools.SignMaster.Resources.default-signs.tsv</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+{
+  "name": "NGT_SignMaster",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/Lhorath/NGT-SIGNMASTER",
+  "description": "Automatically applies the NGT master rich-text style rules to Valheim signs.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2351"
+  ]
+}
