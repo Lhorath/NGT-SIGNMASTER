@@ -1,0 +1,287 @@
+# Generated from docs/Valheim_1.0.16_Master_Styled_Signs.md
+# Role	Label	StyledText
+Header	RESOURCES	<#fff><u><cspace=6><size=5>RESOURCES\n<size=3>📦
+Header	COOKHOUSE	<#fc8><u><cspace=6><size=5>COOKHOUSE\n<size=3>🍲
+Header	PREPARED	<#f9c><u><cspace=6><size=5>PREPARED\n<size=3>🍽️
+Header	TROPHIES	<#fc8><u><cspace=6><size=5>TROPHIES\n<size=3>🏆
+Header	BOSS STORAGE	<#f86><u><cspace=6><size=5>BOSS STORAGE\n<size=3>👑
+Header	TREASURE	<#fd8><u><cspace=6><size=5>TREASURE\n<size=3>💰
+Header	ARMOR	<#adf><u><cspace=6><size=5>ARMOR\n<size=3>🛡️
+Header	WEAPONS	<#f9a><u><cspace=6><size=5>WEAPONS\n<size=3>⚔️
+Header	UTILITY	<#9df><u><cspace=6><size=5>UTILITY\n<size=3>🧭
+Header	MAIN HUB	<#fff><u><cspace=6><size=5>MAIN HUB\n<size=3>🌀
+Header	MEADOWS	<#bf8><u><cspace=6><size=5>MEADOWS\n<size=3>🌱
+Header	BLACK FOREST	<#8d8><u><cspace=6><size=5>BLACK FOREST\n<size=3>🌲
+Header	OCEAN	<#8df><u><cspace=6><size=5>OCEAN\n<size=3>🌊
+Header	SWAMP	<#bc8><u><cspace=6><size=5>SWAMP\n<size=3>🪱
+Header	MOUNTAIN	<#cdf><u><cspace=6><size=5>MOUNTAIN\n<size=3>❄️
+Header	PLAINS	<#fd8><u><cspace=6><size=5>PLAINS\n<size=3>🌾
+Header	MISTLANDS	<#caf><u><cspace=6><size=5>MISTLANDS\n<size=3>🌫️
+Header	ASHLANDS	<#f86><u><cspace=6><size=5>ASHLANDS\n<size=3>🔥
+Header	DEEP NORTH	<#9ef><u><cspace=6><size=5>DEEP NORTH\n<size=3>🧊
+Header	BIOMES	<#bef><u><cspace=6><size=5>BIOMES\n<size=3>🌍
+Header	MERCHANTS	<#fd8><u><cspace=6><size=5>MERCHANTS\n<size=3>🪙⚒️
+Header	BOSS ALTARS	<#f86><u><cspace=6><size=5>BOSS ALTARS\n<size=3>👑
+Header	MINING	<#ccc><u><cspace=6><size=5>MINING\n<size=3>⛏️
+Header	DUNGEONS	<#c9f><u><cspace=6><size=5>DUNGEONS\n<size=3>🗝️
+Header	FARMS	<#afa><u><cspace=6><size=5>FARMS\n<size=3>🌾
+Header	SETTLEMENTS	<#8df><u><cspace=6><size=5>SETTLEMENTS\n<size=3>🏘️
+Storage	WOOD	<#bf8><size=3>WOOD\n<size=5>🌳
+Storage	FINE WOOD	<#bf8><size=3>FINE WOOD\n<size=5>🌳
+Storage	STONE	<#bf8><size=3>STONE\n<size=5>⛰️
+Storage	FLINT	<#bf8><size=3>FLINT\n<size=5>🪨
+Storage	RESIN	<#bf8><size=3>RESIN\n<size=5>🟠
+Storage	DEER HIDE	<#bf8><size=3>DEER HIDE\n<size=5>🦌
+Storage	FEATHERS	<#bf8><size=3>FEATHERS\n<size=5>🪶
+Storage	LEATHER SCRAPS	<#bf8><size=3>LEATHER SCRAPS\n<size=5>🐗
+Storage	BONE FRAGMENTS	<#bf8><size=3>BONE FRAGMENTS\n<size=5>🦴
+Storage	TREE SEEDS	<#bf8><size=3>TREE SEEDS\n<size=5>🌱
+Storage	AXE HEADS	<#bf8><size=3>AXE HEADS\n<size=5>🪓
+Storage	GREYDWARF EYES	<#bf8><size=3>GREYDWARF EYES\n<size=5>👁️
+Storage	COPPER	<#8d8><size=3>COPPER\n<size=5>🟠
+Storage	TIN	<#8d8><size=3>TIN\n<size=5>⚪
+Storage	BRONZE	<#8d8><size=3>BRONZE\n<size=5>🟤
+Storage	UNNATURAL MATERIALS	<#8d8><size=3>UNNATURAL MATERIALS\n<size=5>⚙️
+Storage	CORE WOOD	<#8d8><size=3>CORE WOOD\n<size=5>🌲
+Storage	TROLL HIDE	<#8d8><size=3>TROLL HIDE\n<size=5>👹
+Storage	SURTLING CORES	<#8d8><size=3>SURTLING CORES\n<size=5>🔴
+Storage	ANCIENT SEEDS	<#8d8><size=3>ANCIENT SEEDS\n<size=5>🌱
+Storage	BEAR HIDE	<#8d8><size=3>BEAR HIDE\n<size=5>🐻
+Storage	BEAR PAWS	<#8d8><size=3>BEAR PAWS\n<size=5>🐾
+Storage	ECTOPLASM	<#8d8><size=3>ECTOPLASM\n<size=5>👻
+Storage	YMIR FLESH	<#8d8><size=3>YMIR FLESH\n<size=5>🥩
+Storage	THUNDER STONE	<#8d8><size=3>THUNDER STONE\n<size=5>⚡
+Storage	CHITIN	<#8df><size=3>CHITIN\n<size=5>🐚
+Storage	SERPENT SCALE	<#8df><size=3>SERPENT SCALE\n<size=5>🐉
+Storage	IRON	<#bc8><size=3>IRON\n<size=5>⚙️
+Storage	ANCIENT BARK	<#bc8><size=3>ANCIENT BARK\n<size=5>🌳
+Storage	WITHERED BONE	<#bc8><size=3>WITHERED BONE\n<size=5>🦴
+Storage	ROOT	<#bc8><size=3>ROOT\n<size=5>🌿
+Storage	COAL	<#bc8><size=3>COAL\n<size=5>⚫
+Storage	WRITHAN ROOTS	<#bc8><size=3>WRITHAN ROOTS\n<size=5>🌱
+Storage	GUCK	<#bc8><size=3>GUCK\n<size=5>🟢
+Storage	SILVER	<#cdf><size=3>SILVER\n<size=5>⚪
+Storage	OBSIDIAN	<#cdf><size=3>OBSIDIAN\n<size=5>🪨
+Storage	CRYSTAL	<#cdf><size=3>CRYSTAL\n<size=5>💎
+Storage	DRAGON EGGS	<#cdf><size=3>DRAGON EGGS\n<size=5>🥚
+Storage	WOLF PELT	<#cdf><size=3>WOLF PELT\n<size=5>🐺
+Storage	WOLF FANGS	<#cdf><size=3>WOLF FANGS\n<size=5>🦷
+Storage	RED JUTE	<#cdf><size=3>RED JUTE\n<size=5>🌿
+Storage	FENRIS HAIR	<#cdf><size=3>FENRIS HAIR\n<size=5>🧶
+Storage	FENRIS CLAWS	<#cdf><size=3>FENRIS CLAWS\n<size=5>🐾
+Storage	BLACK METAL	<#fd8><size=3>BLACK METAL\n<size=5>⚫
+Storage	FLAX & LINEN	<#fd8><size=3>FLAX & LINEN\n<size=5>🧵
+Storage	TAR	<#fd8><size=3>TAR\n<size=5>🟤
+Storage	LOX PELT	<#fd8><size=3>LOX PELT\n<size=5>🐂
+Storage	NEEDLES	<#fd8><size=3>NEEDLES\n<size=5>📍
+Storage	FULING TOTEMS	<#fd8><size=3>FULING TOTEMS\n<size=5>🗿
+Storage	VILE RIBCAGE	<#fd8><size=3>VILE RIBCAGE\n<size=5>🦴
+Storage	BLACK MARBLE	<#caf><size=3>BLACK MARBLE\n<size=5>⬛
+Storage	YGGDRASIL WOOD	<#caf><size=3>YGGDRASIL WOOD\n<size=5>🌳
+Storage	CARAPACE	<#caf><size=3>CARAPACE\n<size=5>🪲
+Storage	MANDIBLE	<#caf><size=3>MANDIBLE\n<size=5>🦷
+Storage	BILEBAG	<#caf><size=3>BILEBAG\n<size=5>🟢
+Storage	SOFT TISSUE	<#caf><size=3>SOFT TISSUE\n<size=5>🧠
+Storage	REFINED EITR	<#caf><size=3>REFINED EITR\n<size=5>✨
+Storage	BLACK CORE	<#caf><size=3>BLACK CORE\n<size=5>⚫
+Storage	WISP	<#caf><size=3>WISP\n<size=5>✨
+Storage	SCALE HIDE	<#caf><size=3>SCALE HIDE\n<size=5>🐇
+Storage	BLUE JUTE	<#caf><size=3>BLUE JUTE\n<size=5>🧵
+Storage	ASHWOOD	<#f86><size=3>ASHWOOD\n<size=5>🌳
+Storage	GRAUSTEN	<#f86><size=3>GRAUSTEN\n<size=5>🪨
+Storage	FLAMETAL	<#f86><size=3>FLAMETAL\n<size=5>🔥
+Storage	CHARCOAL RESIN	<#f86><size=3>CHARCOAL RESIN\n<size=5>🟠
+Storage	ASKSVIN HIDE	<#f86><size=3>ASKSVIN HIDE\n<size=5>🦎
+Storage	ASKSVIN BLADDER	<#f86><size=3>ASKSVIN BLADDER\n<size=5>🟢
+Storage	ASKSVIN BONES	<#f86><size=3>ASKSVIN BONES\n<size=5>🦴
+Storage	CHARRED BONES	<#f86><size=3>CHARRED BONES\n<size=5>🦴
+Storage	CELESTIAL FEATHER	<#f86><size=3>CELESTIAL FEATHER\n<size=5>🪶
+Storage	BONEMAW TOOTH	<#f86><size=3>BONEMAW TOOTH\n<size=5>🦷
+Storage	BONEMAW SCALE	<#f86><size=3>BONEMAW SCALE\n<size=5>🐉
+Storage	MORGEN HEART	<#f86><size=3>MORGEN HEART\n<size=5>❤️
+Storage	MORGEN SINEW	<#f86><size=3>MORGEN SINEW\n<size=5>🧵
+Storage	PROUSTITE POWDER	<#f86><size=3>PROUSTITE POWDER\n<size=5>🔥
+Storage	SULFUR	<#f86><size=3>SULFUR\n<size=5>🟡
+Storage	MOLTEN CORE	<#f86><size=3>MOLTEN CORE\n<size=5>🔥
+Storage	ASHLANDS GEMS	<#f86><size=3>ASHLANDS GEMS\n<size=5>💎
+Storage	POT SHARDS	<#f86><size=3>POT SHARDS\n<size=5>🏺
+Storage	DYRNWYN PARTS	<#f86><size=3>DYRNWYN PARTS\n<size=5>⚔️
+Storage	EMBERS	<#f86><size=3>EMBERS\n<size=5>🔥
+Storage	TIMBERWOOD	<#9ef><size=3>TIMBERWOOD\n<size=5>🌲
+Storage	BLOODGOLD	<#9ef><size=3>BLOODGOLD\n<size=5>🟡
+Storage	FROSTCORE	<#9ef><size=3>FROSTCORE\n<size=5>❄️
+Storage	LIQUID FROST	<#9ef><size=3>LIQUID FROST\n<size=5>💧
+Storage	FROZEN BRANCH	<#9ef><size=3>FROZEN BRANCH\n<size=5>🌿
+Storage	ELAKING HAIR	<#9ef><size=3>ELAKING HAIR\n<size=5>🧶
+Storage	LEATHER STRAPS	<#9ef><size=3>LEATHER STRAPS\n<size=5>🧵
+Storage	MOOSE HIDE	<#9ef><size=3>MOOSE HIDE\n<size=5>🫎
+Storage	MOOSE SINEW	<#9ef><size=3>MOOSE SINEW\n<size=5>🧵
+Storage	SEAL PELT	<#9ef><size=3>SEAL PELT\n<size=5>🦭
+Storage	NORNATHREAD	<#9ef><size=3>NORNATHREAD\n<size=5>🧵
+Storage	LONG CLAWS	<#9ef><size=3>LONG CLAWS\n<size=5>🦴
+Storage	MEMORIAL COAL	<#9ef><size=3>MEMORIAL COAL\n<size=5>⚫
+Storage	NORTH ESSENCES	<#9ef><size=3>NORTH ESSENCES\n<size=5>✨
+Storage	DEAD PULP	<#9ef><size=3>DEAD PULP\n<size=5>🟢
+Storage	NORD MOULDS & CASTS	<#9ef><size=3>NORD MOULDS & CASTS\n<size=5>⚒️
+Storage	BEES & HONEY	<#bf8><size=3>BEES & HONEY\n<size=5>🐝🍯
+Storage	DEER MEAT	<#bf8><size=3>DEER MEAT\n<size=5>🥩
+Storage	NECK TAIL	<#bf8><size=3>NECK TAIL\n<size=5>🥩
+Storage	BOAR MEAT	<#bf8><size=3>BOAR MEAT\n<size=5>🥩
+Storage	MUSHROOM	<#bf8><size=3>MUSHROOM\n<size=5>🍄
+Storage	RASPBERRY	<#bf8><size=3>RASPBERRY\n<size=5>🫐
+Storage	DANDELION	<#bf8><size=3>DANDELION\n<size=5>🌼
+Storage	FISH	<#bf8><size=3>FISH\n<size=5>🐟
+Storage	ENTRAILS	<#bf8><size=3>ENTRAILS\n<size=5>🫀
+Storage	BEAR MEAT	<#8d8><size=3>BEAR MEAT\n<size=5>🥩
+Storage	BLUEBERRIES	<#8d8><size=3>BLUEBERRIES\n<size=5>🫐
+Storage	THISTLE	<#8d8><size=3>THISTLE\n<size=5>🌿
+Storage	CARROT	<#8d8><size=3>CARROT\n<size=5>🥕
+Storage	YELLOW MUSHROOM	<#8d8><size=3>YELLOW MUSHROOM\n<size=5>🍄
+Storage	BUKEPERRIES	<#8d8><size=3>BUKEPERRIES\n<size=5>🫐
+Storage	BLOODBAGS	<#bc8><size=3>BLOODBAGS\n<size=5>🩸
+Storage	OOZE	<#bc8><size=3>OOZE\n<size=5>🟢
+Storage	TURNIP	<#bc8><size=3>TURNIP\n<size=5>🌱
+Storage	BOG WITCH GOODS	<#bc8><size=3>BOG WITCH GOODS\n<size=5>🧺
+Storage	FREEZE GLANDS	<#cdf><size=3>FREEZE GLANDS\n<size=5>❄️
+Storage	WOLF MEAT	<#cdf><size=3>WOLF MEAT\n<size=5>🥩
+Storage	ONION	<#cdf><size=3>ONION\n<size=5>🧅
+Storage	BARLEY	<#fd8><size=3>BARLEY\n<size=5>🌾
+Storage	CLOUDBERRIES	<#fd8><size=3>CLOUDBERRIES\n<size=5>🫐
+Storage	LOX MEAT	<#fd8><size=3>LOX MEAT\n<size=5>🥩
+Storage	ROTTEN MEAT	<#fd8><size=3>ROTTEN MEAT\n<size=5>🥩
+Storage	CHICKEN MEAT	<#fd8><size=3>CHICKEN MEAT\n<size=5>🥩
+Storage	EGGS	<#fd8><size=3>EGGS\n<size=5>🥚
+Storage	SERPENT MEAT	<#8df><size=3>SERPENT MEAT\n<size=5>🐍
+Storage	SEEKER MEAT	<#caf><size=3>SEEKER MEAT\n<size=5>🥩
+Storage	HARE MEAT	<#caf><size=3>HARE MEAT\n<size=5>🥩
+Storage	ROYAL JELLY	<#caf><size=3>ROYAL JELLY\n<size=5>🍯
+Storage	MAGECAP	<#caf><size=3>MAGECAP\n<size=5>🍄
+Storage	JOTUN PUFFS	<#caf><size=3>JOTUN PUFFS\n<size=5>🍄
+Storage	BLOOD CLOTS	<#caf><size=3>BLOOD CLOTS\n<size=5>🩸
+Storage	SAP	<#caf><size=3>SAP\n<size=5>💧
+Storage	FIDDLEHEAD	<#f86><size=3>FIDDLEHEAD\n<size=5>🌿
+Storage	SMOKE PUFF	<#f86><size=3>SMOKE PUFF\n<size=5>🍄
+Storage	VINEBERRIES	<#f86><size=3>VINEBERRIES\n<size=5>🍇
+Storage	ASKSVIN TAIL	<#f86><size=3>ASKSVIN TAIL\n<size=5>🥩
+Storage	VOLTURE MEAT	<#f86><size=3>VOLTURE MEAT\n<size=5>🥩
+Storage	BONEMAW MEAT	<#f86><size=3>BONEMAW MEAT\n<size=5>🥩
+Storage	MOOSE MEAT	<#9ef><size=3>MOOSE MEAT\n<size=5>🥩
+Storage	SEAL BLUBBER	<#9ef><size=3>SEAL BLUBBER\n<size=5>🦭
+Storage	KALE	<#9ef><size=3>KALE\n<size=5>🥬
+Storage	OATS	<#9ef><size=3>OATS\n<size=5>🌾
+Storage	ICE	<#9ef><size=3>ICE\n<size=5>🧊
+Storage	LINGONBERRIES	<#9ef><size=3>LINGONBERRIES\n<size=5>🫐
+Storage	POTEITR	<#9ef><size=3>POTEITR\n<size=5>🥔
+Storage	LUMINOUS LARVA	<#9ef><size=3>LUMINOUS LARVA\n<size=5>✨
+Storage	HEALTH MEALS	<#f88><size=3>HEALTH MEALS\n<size=5>❤️
+Storage	STAMINA MEALS	<#fd8><size=3>STAMINA MEALS\n<size=5>⚡
+Storage	EITR DISHES	<#caf><size=3>EITR DISHES\n<size=5>✨
+Storage	FEASTS	<#fc8><size=3>FEASTS\n<size=5>🍽️
+Storage	MEAD BASE	<#f9c><size=3>MEAD BASE\n<size=5>🧪
+Storage	MEADS	<#fcb><size=3>MEADS\n<size=5>🍯
+Trophy	MEADOWS	<#bf8><size=3>MEADOWS\n<size=5>🏆🌱
+Trophy	FOREST & OCEAN	<#8dc><size=3>FOREST & OCEAN\n<size=5>🏆🌲🌊
+Trophy	SWAMP	<#bc8><size=3>SWAMP\n<size=5>🏆🪱
+Trophy	MOUNTAIN	<#cdf><size=3>MOUNTAIN\n<size=5>🏆❄️
+Trophy	PLAINS	<#fd8><size=3>PLAINS\n<size=5>🏆🌾
+Trophy	MISTLANDS	<#caf><size=3>MISTLANDS\n<size=5>🏆🌫️
+Trophy	ASHLANDS	<#f86><size=3>ASHLANDS\n<size=5>🏆🔥
+Trophy	DEEP NORTH	<#9ef><size=3>DEEP NORTH\n<size=5>🏆❄️
+Storage	BOSS PROGRESSION	<#fd8><size=3>BOSS PROGRESSION\n<size=5>🔑
+Storage	BOSS TROPHIES	<#f86><size=3>BOSS TROPHIES\n<size=5>👑
+Storage	TREASURE	<#fd8><size=3>TREASURE\n<size=5>💰
+Storage	ANCIENT GEMS	<#caf><size=3>ANCIENT GEMS\n<size=5>💎
+Storage	BATTLE IDOLS	<#f86><size=3>BATTLE IDOLS\n<size=5>⚔️
+Storage	ARMOR IDOLS	<#adf><size=3>ARMOR IDOLS\n<size=5>🛡️
+Storage	HELMETS	<#adf><size=3>HELMETS\n<size=5>🪖
+Storage	CHEST ARMOR	<#adf><size=3>CHEST ARMOR\n<size=5>🛡️
+Storage	LEG ARMOR	<#adf><size=3>LEG ARMOR\n<size=5>👖
+Storage	CAPES	<#adf><size=3>CAPES\n<size=5>🧥
+Storage	SWORDS	<#f9a><size=3>SWORDS\n<size=5>⚔️
+Storage	GREATSWORDS	<#f9a><size=3>GREATSWORDS\n<size=5>⚔️
+Storage	DAGGERS & KNIVES	<#f9a><size=3>DAGGERS & KNIVES\n<size=5>🔪
+Storage	CLUBS & MACES	<#f9a><size=3>CLUBS & MACES\n<size=5>🔨
+Storage	SLEDGES	<#f9a><size=3>SLEDGES\n<size=5>🔨
+Storage	AXES	<#f9a><size=3>AXES\n<size=5>🪓
+Storage	GREATAXES	<#f9a><size=3>GREATAXES\n<size=5>🪓
+Storage	SPEARS	<#f9a><size=3>SPEARS\n<size=5>🔱
+Storage	ATGEIRS	<#f9a><size=3>ATGEIRS\n<size=5>⚔️
+Storage	BOWS	<#f9a><size=3>BOWS\n<size=5>🏹
+Storage	CROSSBOWS	<#f9a><size=3>CROSSBOWS\n<size=5>🏹
+Storage	KNUCKLES & FISTS	<#f9a><size=3>KNUCKLES & FISTS\n<size=5>🥊
+Storage	STAVES	<#f9a><size=3>STAVES\n<size=5>🪄
+Storage	SHIELDS	<#9df><size=3>SHIELDS\n<size=5>🛡️
+Storage	AMMUNITION	<#9df><size=3>AMMUNITION\n<size=5>🏹
+Storage	TRINKETS	<#9df><size=3>TRINKETS\n<size=5>💍
+Storage	TOOLS	<#9df><size=3>TOOLS\n<size=5>🔨
+Storage	UTILITY GEAR	<#9df><size=3>UTILITY GEAR\n<size=5>🧭
+Storage	SADDLES	<#9df><size=3>SADDLES\n<size=5>🐎
+Storage	FISHING BAIT	<#9df><size=3>FISHING BAIT\n<size=5>🎣
+Storage	BOMBS	<#9df><size=3>BOMBS\n<size=5>💣
+Portal	BIOMES	<#bef><u><size=3>BIOMES\n<size=5>🌍
+Portal	MERCHANTS & FORGE	<#fd8><u><size=3>MERCHANTS & FORGE\n<size=5>🪙⚒️
+Portal	BOSS ALTARS	<#f86><u><size=3>BOSS ALTARS\n<size=5>👑
+Portal	MINING	<#ccc><u><size=3>MINING\n<size=5>⛏️
+Portal	DUNGEONS & QUESTS	<#c9f><u><size=3>DUNGEONS & QUESTS\n<size=5>🗝️
+Portal	FARMS & HARVEST	<#afa><u><size=3>FARMS & HARVEST\n<size=5>🌾
+Portal	SETTLEMENTS	<#8df><u><size=3>SETTLEMENTS\n<size=5>🏘️
+Portal	SPAWN	<#fff><size=3>SPAWN\n<size=5>🌀
+Portal	DOCK	<#fff><size=3>DOCK\n<size=5>⚓
+Portal	EXPLORE	<#fff><size=3>EXPLORE\n<size=5>🧭
+Portal	MAIN HUB	<#fff><u><size=3>MAIN HUB\n<size=5>🌀
+Portal	MEADOWS	<#bf8><size=3>MEADOWS\n<size=5>🌱
+Portal	BLACK FOREST	<#8d8><size=3>BLACK FOREST\n<size=5>🌲
+Portal	SWAMP	<#bc8><size=3>SWAMP\n<size=5>🪱
+Portal	MOUNTAIN	<#cdf><size=3>MOUNTAIN\n<size=5>❄️
+Portal	PLAINS	<#fd8><size=3>PLAINS\n<size=5>🌾
+Portal	MISTLANDS	<#caf><size=3>MISTLANDS\n<size=5>🌫️
+Portal	ASHLANDS	<#f86><size=3>ASHLANDS\n<size=5>🔥
+Portal	DEEP NORTH	<#9ef><size=3>DEEP NORTH\n<size=5>🧊
+Portal	HALDOR	<#fd8><size=3>HALDOR\n<size=5>🪙
+Portal	HILDIR	<#fd8><size=3>HILDIR\n<size=5>🎒
+Portal	BOG WITCH	<#fd8><size=3>BOG WITCH\n<size=5>🧙
+Portal	FORGE OF POTENTIAL	<#fd8><size=3>FORGE OF POTENTIAL\n<size=5>⚒️
+Portal	EIKTHYR	<#f86><size=3>EIKTHYR\n<size=5>🦌
+Portal	THE ELDER	<#f86><size=3>THE ELDER\n<size=5>🌲
+Portal	BONEMASS	<#f86><size=3>BONEMASS\n<size=5>💀
+Portal	MODER	<#f86><size=3>MODER\n<size=5>🐉
+Portal	YAGLUTH	<#f86><size=3>YAGLUTH\n<size=5>👑
+Portal	THE QUEEN	<#f86><size=3>THE QUEEN\n<size=5>👑
+Portal	FADER	<#f86><size=3>FADER\n<size=5>🔥
+Portal	KALL FIMBULBRINGER	<#f86><size=3>KALL FIMBULBRINGER\n<size=5>❄️
+Portal	COPPER	<#ccc><size=3>COPPER\n<size=5>🟠
+Portal	TIN	<#ccc><size=3>TIN\n<size=5>⚪
+Portal	IRON	<#ccc><size=3>IRON\n<size=5>⚙️
+Portal	SILVER	<#ccc><size=3>SILVER\n<size=5>⚪
+Portal	OBSIDIAN	<#ccc><size=3>OBSIDIAN\n<size=5>🪨
+Portal	BLACK MARBLE	<#ccc><size=3>BLACK MARBLE\n<size=5>⬛
+Portal	FLAMETAL	<#ccc><size=3>FLAMETAL\n<size=5>🔥
+Portal	BLOODGOLD	<#ccc><size=3>BLOODGOLD\n<size=5>🟡
+Portal	SMOULDERING TOMB	<#c9f><size=3>SMOULDERING TOMB\n<size=5>🔥
+Portal	HOWLING CAVERN	<#c9f><size=3>HOWLING CAVERN\n<size=5>🐺
+Portal	SEALED TOWER	<#c9f><size=3>SEALED TOWER\n<size=5>🗼
+Portal	MÖRKHALLA	<#c9f><size=3>MÖRKHALLA\n<size=5>🏰
+Portal	WINDING TUNNELS	<#c9f><size=3>WINDING TUNNELS\n<size=5>🌀
+Portal	FROST CAVE	<#c9f><i><size=3>FROST CAVE\n<size=5>❄️
+Portal	INFESTED MINE	<#c9f><i><size=3>INFESTED MINE\n<size=5>🪲
+Portal	CHARRED FORTRESS	<#c9f><i><size=3>CHARRED FORTRESS\n<size=5>🏰
+Portal	NORTH MEMORIAL	<#c9f><i><size=3>NORTH MEMORIAL\n<size=5>⚔️
+Portal	FARM	<#afa><size=3>FARM\n<size=5>🌾
+Portal	BLACK METAL FARM	<#afa><size=3>BLACK METAL FARM\n<size=5>⚫
+Portal	WOLF FARM	<#afa><size=3>WOLF FARM\n<size=5>🐺
+Portal	GREYDWARF FARM	<#afa><size=3>GREYDWARF FARM\n<size=5>🌲
+Portal	SAP FARM	<#afa><i><size=3>SAP FARM\n<size=5>💧
+Portal	TAR PIT	<#afa><i><size=3>TAR PIT\n<size=5>🟤
+Portal	LIVESTOCK	<#afa><i><size=3>LIVESTOCK\n<size=5>🐂
+Portal	ASHVINE FARM	<#afa><i><size=3>ASHVINE FARM\n<size=5>🍇
+Portal	NORTH FARM	<#afa><i><size=3>NORTH FARM\n<size=5>❄️
+Portal	SURTLING FARM	<#afa><i><size=3>SURTLING FARM\n<size=5>🔥
+Portal	DRAUGR FARM	<#afa><i><size=3>DRAUGR FARM\n<size=5>💀
+Portal	LOX FARM	<#afa><i><size=3>LOX FARM\n<size=5>🐂
+Portal	ASKSVIN FARM	<#afa><i><size=3>ASKSVIN FARM\n<size=5>🦎
+Portal	MOOSE FARM	<#afa><i><size=3>MOOSE FARM\n<size=5>🫎
+Portal	CHARRED FARM	<#afa><i><size=3>CHARRED FARM\n<size=5>🔥
+Portal	DABOS	<#8df><size=3>DABOS\n<size=5>🏘️
+Portal	DACKS LANDING	<#8df><size=3>DACKS LANDING\n<size=5>⚓
+Portal	NEW DABINGARD	<#8df><size=3>NEW DABINGARD\n<size=5>🏰
+Portal	STARTER VILLAGE	<#8df><size=3>STARTER VILLAGE\n<size=5>🏡
