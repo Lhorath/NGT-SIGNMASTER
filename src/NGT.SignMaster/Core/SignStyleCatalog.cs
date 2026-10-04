@@ -29,13 +29,21 @@ namespace NerdyGamerTools.SignMaster.Core
                     _byLabel.Add(key, bucket);
                 }
 
-                if (!bucket.Any(existing =>
-                        existing.Role == style.Role &&
-                        string.Equals(existing.StyledText, style.StyledText, StringComparison.Ordinal)))
+                SignStyle? existingRole = bucket.FirstOrDefault(existing => existing.Role == style.Role);
+                if (existingRole != null)
                 {
-                    bucket.Add(style);
+                    if (string.Equals(existingRole.StyledText, style.StyledText, StringComparison.Ordinal))
+                    {
+                        throw new InvalidOperationException(
+                            $"Duplicate SignMaster rule for role '{style.Role}' and label '{style.Label}'.");
+                    }
+
+                    throw new InvalidOperationException(
+                        $"Conflicting SignMaster rules for role '{style.Role}' and label '{style.Label}'. " +
+                        "A role/label pair must resolve to exactly one styled string.");
                 }
 
+                bucket.Add(style);
                 _styledTexts.Add(style.StyledText);
             }
         }
@@ -95,6 +103,11 @@ namespace NerdyGamerTools.SignMaster.Core
                 }
 
                 styles.Add(new SignStyle(role, label, styledText));
+            }
+
+            if (styles.Count == 0)
+            {
+                throw new FormatException("SignMaster style data did not contain any rules.");
             }
 
             return new SignStyleCatalog(styles);
