@@ -1,3 +1,4 @@
+using System;
 using HarmonyLib;
 using NerdyGamerTools.SignMaster.Core;
 
@@ -14,19 +15,32 @@ namespace NerdyGamerTools.SignMaster.Patches
                 return;
             }
 
-            SignStyleResult result = SignMasterPlugin.Engine.Transform(
-                text,
-                SignMasterPlugin.CurrentOptions());
+            string originalText = text;
 
-            if (result.Changed)
+            try
             {
-                text = result.Text;
+                SignStyleResult result = SignMasterPlugin.Engine.Transform(
+                    text,
+                    SignMasterPlugin.CurrentOptions());
+
+                if (result.Changed)
+                {
+                    text = result.Text;
+                }
+
+                if (SignMasterPlugin.DebugLogging.Value)
+                {
+                    SignMasterPlugin.Log.LogDebug(
+                        $"Sign style resolution: status={result.Status}, label={result.NormalizedLabel ?? "(none)"}, changed={result.Changed}");
+                }
             }
-
-            if (SignMasterPlugin.DebugLogging.Value)
+            catch (Exception ex)
             {
-                SignMasterPlugin.Log.LogDebug(
-                    $"Sign style resolution: status={result.Status}, label={result.NormalizedLabel ?? "(none)"}, changed={result.Changed}");
+                // SignMaster must never prevent the vanilla sign edit from being saved.
+                // Restore exactly what the player entered and allow Sign.SetText to continue.
+                text = originalText;
+                SignMasterPlugin.Log.LogError(
+                    $"SignMaster failed to style sign text. Saving the original text unchanged. {ex}");
             }
         }
     }
