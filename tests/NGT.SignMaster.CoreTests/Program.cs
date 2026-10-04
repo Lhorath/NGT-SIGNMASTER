@@ -8,6 +8,21 @@ static void Assert(bool condition, string message)
     }
 }
 
+static void AssertThrows<TException>(Action action, string message)
+    where TException : Exception
+{
+    try
+    {
+        action();
+    }
+    catch (TException)
+    {
+        return;
+    }
+
+    throw new InvalidOperationException(message);
+}
+
 string dataPath = Path.Combine(AppContext.BaseDirectory, "default-signs.tsv");
 using var reader = File.OpenText(dataPath);
 SignStyleCatalog catalog = SignStyleCatalog.ParseTsv(reader);
@@ -70,5 +85,21 @@ Assert(SignStyleEngine.CountUnicodeCharacters(settlementsHeader.Text) == 50,
     "SETTLEMENTS header should contain 50 Unicode characters");
 Assert(settlementsHeader.Text.Length == 51,
     "SETTLEMENTS header should demonstrate the UTF-16 surrogate-pair case");
+
+AssertThrows<FormatException>(
+    () => SignStyleCatalog.ParseTsv(new StringReader(string.Empty)),
+    "An empty catalog should be rejected");
+
+AssertThrows<InvalidOperationException>(
+    () => SignStyleCatalog.ParseTsv(new StringReader(
+        "Storage\tWOOD\t<#111><size=3>WOOD\\n<size=5>🌳\n" +
+        "Storage\tWOOD\t<#222><size=3>WOOD\\n<size=5>🌳\n")),
+    "Conflicting role/label rules should be rejected");
+
+AssertThrows<InvalidOperationException>(
+    () => SignStyleCatalog.ParseTsv(new StringReader(
+        "Storage\tWOOD\t<#111><size=3>WOOD\\n<size=5>🌳\n" +
+        "Storage\tWOOD\t<#111><size=3>WOOD\\n<size=5>🌳\n")),
+    "Duplicate role/label rules should be rejected");
 
 Console.WriteLine("All NGT SignMaster core tests passed.");
