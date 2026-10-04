@@ -64,4 +64,11 @@ Assert(reserved.Text.Contains("<i>"), "Reserved portal must preserve italic stat
 SignStyleResult mainHub = engine.Transform("P:MAIN HUB", options);
 Assert(mainHub.Text.Contains("<u>"), "MAIN HUB return portal must preserve underline state");
 
+SignStyleResult settlementsHeader = engine.Transform("H:SETTLEMENTS", options);
+Assert(settlementsHeader.Changed, "50-character SETTLEMENTS header should apply");
+Assert(SignStyleEngine.CountUnicodeCharacters(settlementsHeader.Text) == 50,
+    "SETTLEMENTS header should contain 50 Unicode characters");
+Assert(settlementsHeader.Text.Length == 51,
+    "SETTLEMENTS header should demonstrate the UTF-16 surrogate-pair case");
+
 Console.WriteLine("All NGT SignMaster core tests passed.");
