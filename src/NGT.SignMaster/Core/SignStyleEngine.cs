@@ -126,7 +126,7 @@ namespace NerdyGamerTools.SignMaster.Core
 
         private static SignStyleResult Apply(SignStyle style, string original, SignStyleOptions options)
         {
-            if (style.StyledText.Length > options.MaxStyledLength)
+            if (CountUnicodeCharacters(style.StyledText) > options.MaxStyledLength)
             {
                 return new SignStyleResult(
                     original,
@@ -140,6 +140,29 @@ namespace NerdyGamerTools.SignMaster.Core
                 !string.Equals(style.StyledText, original, StringComparison.Ordinal),
                 SignStyleStatus.Applied,
                 SignStyleCatalog.NormalizeLabel(style.Label));
+        }
+
+        internal static int CountUnicodeCharacters(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return 0;
+            }
+
+            int count = 0;
+            for (int index = 0; index < value.Length; index++)
+            {
+                if (char.IsHighSurrogate(value[index]) &&
+                    index + 1 < value.Length &&
+                    char.IsLowSurrogate(value[index + 1]))
+                {
+                    index++;
+                }
+
+                count++;
+            }
+
+            return count;
         }
 
         private static bool TryParseRolePrefix(string input, out SignRole role, out string label)
