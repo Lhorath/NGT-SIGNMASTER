@@ -66,7 +66,9 @@ The default catalog follows the supplied Valheim 1.0.16 master rules:
 - no `<b>` markup
 - portal return labels preserve underline semantics
 - reserved future portal bays preserve italics
-- every generated default string remains within the 50-character sign limit
+- every generated default string remains within the audited 50-character sign limit
+
+The length guard counts Unicode characters rather than raw UTF-16 code units, so emoji surrogate pairs are treated as one character. This matches the master audit and prevents valid 50-character styled strings from being rejected only because they contain emoji.
 
 See `docs/SIGN_RULES.md` for the compact styling specification and `docs/SOURCE.md` for the source master fingerprint used to generate the initial catalog.
 
@@ -91,7 +93,7 @@ BepInEx creates the normal config file for plugin GUID `com.nerdygamertools.sign
 | `AutoStyleBareLabels` | `true` | Style unambiguous plain labels |
 | `EnableRolePrefixes` | `true` | Allow `P:`, `H:`, `T:`, `S:` |
 | `RestyleExistingRichText` | `false` | Allow replacement of manually formatted matching labels |
-| `MaxStyledLength` | `50` | Maximum generated sign-string length |
+| `MaxStyledLength` | `50` | Maximum generated Unicode-character length |
 | `VerboseLogging` | `false` | Log resolution decisions |
 
 ## Building
@@ -135,7 +137,9 @@ The current catalog contains:
 - **285** unique role/style rules
 - **256** unique visible labels
 - **22** intentionally ambiguous labels
-- maximum generated length: **50** characters
+- maximum generated length: **50** Unicode characters
+
+A standalone .NET test harness under `tests/NGT.SignMaster.CoreTests` compiles the actual resolver/catalog source without Valheim assemblies and verifies ambiguity handling, role prefixes, `RAW:`, idempotence, manual-rich-text preservation, reserved portal semantics, and Unicode length handling.
 
 ## Next verification pass
 
