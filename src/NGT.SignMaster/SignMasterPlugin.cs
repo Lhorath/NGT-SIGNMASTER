@@ -25,11 +25,13 @@ namespace NerdyGamerTools.SignMaster
         internal static ConfigEntry<bool> DebugLogging = null!;
 
         private Harmony? _harmony;
+        private static bool _initialized;
 
         private void Awake()
         {
             Log = Logger;
             BindConfiguration();
+            _initialized = false;
 
             try
             {
@@ -41,6 +43,7 @@ namespace NerdyGamerTools.SignMaster
 
                 _harmony = new Harmony(PluginGuid);
                 _harmony.PatchAll();
+                _initialized = true;
 
                 Logger.LogInfo(
                     $"{PluginName} {PluginVersion} loaded with {catalog.StyleCount} styles across " +
@@ -48,13 +51,17 @@ namespace NerdyGamerTools.SignMaster
             }
             catch (System.Exception ex)
             {
-                Logger.LogError($"Failed to initialize {PluginName}: {ex}");
-                Enabled.Value = false;
+                _initialized = false;
+                _harmony?.UnpatchSelf();
+                _harmony = null;
+
+                Logger.LogError(
+                    $"Failed to initialize {PluginName}. Automatic styling is disabled for this session. {ex}");
             }
         }
 
         internal static bool IsOperational =>
-            Enabled != null && Enabled.Value && Engine != null;
+            _initialized && Enabled != null && Enabled.Value && Engine != null;
 
         private void BindConfiguration()
         {
@@ -86,7 +93,7 @@ namespace NerdyGamerTools.SignMaster
                 "General",
                 "MaxStyledLength",
                 50,
-                "Maximum stored sign-string length SignMaster will generate. The supplied 1.0.16 master is designed for 50 characters.");
+                "Maximum generated sign-string length, counted as Unicode characters. The supplied 1.0.16 master is designed for 50 characters.");
 
             DebugLogging = Config.Bind(
                 "Debug",
@@ -97,7 +104,9 @@ namespace NerdyGamerTools.SignMaster
 
         private void OnDestroy()
         {
+            _initialized = false;
             _harmony?.UnpatchSelf();
+            _harmony = null;
         }
 
         internal static SignStyleOptions CurrentOptions()
