@@ -1,0 +1,20 @@
+# Build output
+bin/
+obj/
+Packages/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Local Valheim/BepInEx references
+lib/
+libs/
+Environment.props
+Directory.Build.props.user
+
+# Logs / generated local files
+*.log
