@@ -1,14 +1,18 @@
-name: Validate sign data
+name: Validate SignMaster core
 
 on:
   push:
     paths:
+      - "src/NGT.SignMaster/Core/**"
       - "src/NGT.SignMaster/Resources/default-signs.tsv"
+      - "tests/NGT.SignMaster.CoreTests/**"
       - "tools/validate_sign_data.py"
       - ".github/workflows/validate-sign-data.yml"
   pull_request:
     paths:
+      - "src/NGT.SignMaster/Core/**"
       - "src/NGT.SignMaster/Resources/default-signs.tsv"
+      - "tests/NGT.SignMaster.CoreTests/**"
       - "tools/validate_sign_data.py"
       - ".github/workflows/validate-sign-data.yml"
 
@@ -17,7 +21,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python tools/validate_sign_data.py
+
+      - name: Validate sign catalog
+        run: python tools/validate_sign_data.py
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Compile and run resolver tests
+        run: dotnet run --project tests/NGT.SignMaster.CoreTests/NGT.SignMaster.CoreTests.csproj --configuration Release
